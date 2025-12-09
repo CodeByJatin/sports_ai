@@ -10,19 +10,24 @@ Your AI-powered fitness companion that generates personalized workout and diet p
 - **PDF Export** – Download your complete fitness plan
 - **Smart AI** – Powered by Groq API with advanced language models
 
-## Requirements
+## Project Structure
 
 ```
-Python 3.8+
-streamlit
-requests
-fpdf
+sports_ai/
+├── app.py              # Main Streamlit application
+├── requirements.txt    # Python dependencies
+└── README.md          # Documentation
 ```
 
 ## Installation
 
 ```bash
-pip install streamlit requests fpdf
+# Clone the repository
+git clone <your-repo-url>
+cd sports_ai
+
+# Install dependencies
+pip install -r requirements.txt
 ```
 
 ## Setup
@@ -38,7 +43,7 @@ Get your API key from [Groq Cloud](https://console.groq.com/).
 ## Usage
 
 ```bash
-streamlit run sports_ai.py
+streamlit run app.py
 ```
 
 1. Enter your physical details (height, weight, age)
@@ -62,11 +67,18 @@ Your plan includes three sections:
 - **Diet Plan** – Full-day Indian meal breakdown
 - **Workout Plan** – Weekly exercise routine
 
+## Requirements
+
+- Python 3.8+
+- Streamlit
+- Groq API key (free tier available)
+- Internet connection for API calls
+
 ## Notes
 
 - Plans are generated using AI and should complement professional medical advice
-- Requires active internet connection for API calls
 - PDF uses Latin-1 encoding for broad compatibility
+- All data is processed securely through Groq's API
 
 ---
 
